@@ -1,1 +1,22 @@
 <router-outlet></router-outlet>
+
+<h1>{{title | uppercase}}</h1>
+<h1>{{title | lowercase}}</h1>
+<h1>{{title | titlecase}}</h1>
+<h1>{{title | slice:0:5 | titlecase}}...</h1>
+<h1>{{title }}</h1>
+
+<button 
+    pButton 
+    pRipple 
+    label="Submit" 
+    class="p-button-success">
+</button>
+
+<p-button 
+    label="Search" 
+    icon="pi pi-check" 
+ />
+
+ <p-button icon="pi pi-bell" severity="warning" />
+ <p-button icon="pi pi-user" [rounded]="true" severity="info" [outlined]="true" />
